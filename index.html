@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rina - Ballet Dancer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+
+<body>
+ <header>
+    <div class="header-container">
+     <img src="./photo/ロゴ２.png" alt="logo" class="logo">
+    <nav>
+    <ul>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Performance">Performance</a></li>
+      <li><a href="#Movies">Movie</a></li>
+    </ul>
+  </nav>
+     </div>
+  <video src="./photo/mainmovie.mov" autoplay muted loop playsinline></video>
+ 
+</header>
+
+
+
+  <section id="About">
+  <div class="about-title"><h2>About</h2></div>
+  <div class="about-container">
+    <img src="photo/profile.jpg" alt="profile" class="profile-img">
+    <div class="about-text">
+      <p class="text-name">山林莉奈　Rina Yamabayashi</p>
+      <p>ロシア国立ペルミバレエ学校を卒業後、サンクトペテルブルクバレエ団へ入団。舞台での高い適応力が評価される。<br/>
+      帰国後はフリーのバレエダンサーとして舞台に出演する他、ディナーショーやテーマーパークショーへ出演<br/>
+      また、バレエ講師・俳優としても活動中。</p>
+      <p>全国バレエコンクール in Hirakata  シニア部門　第2位<br/>
+      日本国際バレエコンクール　シニア部門　第2位<br/>
+      NAMUE バレエコンクール　一般部門　第3位</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section id="Performance">
+  <div class="performance-title"><h2>Performance</h2></div>
+  <div class="Performance-container">
+    
+    <div class="main-photo">
+      <img id="mainphoto" src="./photo/anne.jpg" alt="Anne of Greengables">
+    </div>
+
+    <div class="thumbnail-scroll">
+      <img src="./photo/anne.jpg" alt="Anne" onclick="changeMainPhoto(this)">
+      <img src="./photo/花嫁ゾンビ.jpg" alt="Zombie Bride" onclick="changeMainPhoto(this)">
+      <img src="./photo/romeo.jpg" alt="Romeo" onclick="changeMainPhoto(this)">
+      <img src="./photo/dinnershow.jpg" alt="Dinner Show" onclick="changeMainPhoto(this)">
+      <img src="./photo/esmeraldaeshappe.jpg" alt="Esmeralda" onclick="changeMainPhoto(this)">
+      <img src="./photo/aurora.jpg" alt="Aurora" onclick="changeMainPhoto(this)">
+    </div>
+
+    <script>
+  function changeMainPhoto(thumbnail) {
+    const main = document.getElementById("mainphoto");
+    main.src = thumbnail.src;
+    main.alt = thumbnail.alt;
+  }
+</script>
+
+  </div>
+</section>
+
+
+
+
+  <section id = "Movies">
+    <div class="Movies-title"><h2>Movies</h2></div>
+    <div class="Movies-container">
+        <div class="movies-item">
+            <a href="https://youtu.be/cQYa7p4WK3s" target="_blank">
+            <img src="./photo/grandpas.jpg" alt="Grand pas de classic">
+            </a>
+            <p>Grand pas de classic</p>
+        </div>
+
+        <div class="movies-item">
+             <a href="https://youtu.be/cQYa7p4WK3s" target="_blank">
+             <img src="./photo/esmeraldaeshappe.jpg" alt="Esmaralda">
+             </a>
+             <p>Esmaralda</p>
+        </div>
+        
+        <div class="movies-item">
+             <a href="https://youtu.be/XVgZMDhV__U" target="_blank">
+             <img src="./photo/pas de quatle.jpg" alt="Pas de quatle">
+             </a>
+             <p>Pas de quatle</p>
+        </div>
+       
+
+    </div>
+  </section>
+
+
+
+
+  <footer>
+    <p>&copy; 2025 Rina Y.</p>
+  </footer>
+</body>
+</html>
