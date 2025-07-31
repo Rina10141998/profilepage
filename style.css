@@ -1,0 +1,196 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: sans-serif;
+    background: #202020;
+    color: #929292;
+}
+
+.about-title,
+.performance-title,
+.Movies-title {
+  scroll-margin-top: 100px; /* ヘッダーの高さ＋ちょっと余裕 */
+}
+
+#About,
+#Performance,
+#Movies {
+  scroll-margin-top: 1px;
+  padding-top: 1px;
+}
+
+.header-container {
+     position: fixed;
+     display: flex;
+     justify-content: space-between; /* ロゴ左、メニュー右 */
+     align-items: center; /* 縦位置を中央揃え */
+     padding: 1rem 2rem;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%; /* ✅ 横幅を画面いっぱいにする */
+     display: flex;
+     justify-content: space-between; /* ✅ 左右に配置する */
+     align-items: center;
+     padding: 1rem 2rem;
+     background-color: rgba(32, 32, 32, 0.8); /* 背景を付けると見やすい */
+     z-index: 1000;
+     box-sizing: border-box;
+}
+
+.logo {
+  top: 10px;
+  left: 20px;
+  width: 200px; /* お好みでサイズ調整 */
+  height: 50px;
+  z-index: 1000; /* 必ず前面に表示されるように */
+
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem; /* 各メニューの間隔を調整 */
+}
+
+nav li a {
+  text-decoration: none;
+  color: #929292;
+  font-size: 1rem;
+}
+
+video {
+    position: relative;
+    object-fit: cover; 
+    width: 100vw;
+    z-index: -1;
+    margin-top: 73px;
+}
+
+.about-title {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    margin-left: 5vw;
+    width: 30vw;
+    min-width: 300px;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.about-text {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    flex: 1;
+    min-width: 350px;
+}
+
+.text-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #bbbbbb;
+    font-family: "Georgia", serif;
+    border-left: 5px solid #ccc;
+    padding-left: 1rem;
+    
+}
+
+
+
+.performance-title {
+    margin-top: 250px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Performance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.main-photo img {
+    width: 900px;
+    max-width: 90vw;
+    max-height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    transition: 0.3s;
+
+}
+
+.thumbnail-scroll {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.thumbnail-scroll img {
+    width: 150px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.thumbnail-scroll img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+.Movies-title {
+    margin-top: 300px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Movies-container {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+.movies-item {
+   text-align: center;
+}
+
+.movies-item img {
+    width: 400px;
+    height: auto;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+.movies-item img:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: right;
+    margin-right: 5rem;
+}
+
